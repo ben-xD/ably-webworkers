@@ -1,5 +1,7 @@
 import { Types } from 'ably/ably';
-import * as Ably from 'ably/promises';
+// Import the webworker version:
+import * as Ably from 'ably/browser/static/ably-webworker.min';
+// import * as Ably from 'ably/promises';
 
 // Update the API key
 const ABLY_API_KEY = undefined;

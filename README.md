@@ -9,7 +9,7 @@
 
 ## Use Ably v1.2.3
 
-We found that ably v1.2.3 works in Service Workers, but the latest v1.2.9 doesn't work. If you get a crash with a newer version (`window` is undefined), go back to v1.2.3, but hopefully it will be fixed soon. :)
+We found that ably v1.2.3 works in Service Workers, but the latest v1.2.9 doesn't work. If you get a crash with a newer version (`window` is undefined), go back to v1.2.3, but hopefully it will be fixed soon, the PR is [here](https://github.com/ably/ably-js/pull/756).
 
 ## Motivation
 
