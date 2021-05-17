@@ -1,13 +1,13 @@
 import { Types } from 'ably/ably';
 // Import the webworker version:
 import * as Ably from 'ably/browser/static/ably-webworker.min';
-// import * as Ably from 'ably/promises';
+// import * as Ably from 'ably';
 
 // Update the API key
 const ABLY_API_KEY = undefined;
 
 export default class Auth {
-  private ably: Ably.Rest;
+  private ably: Ably.Types.RestPromise;
 
   constructor() {
     if (!ABLY_API_KEY) {
@@ -18,7 +18,7 @@ export default class Auth {
     const clientOptions: Ably.Types.ClientOptions = {
       key: ABLY_API_KEY,
     };
-    this.ably = new Ably.Rest(clientOptions);
+    this.ably = new Ably.Rest.Promise(clientOptions);
   }
 
   createToken = async (
