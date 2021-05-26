@@ -1,9 +1,7 @@
 import { Types } from 'ably/ably';
-// Import the webworker version:
 import * as Ably from 'ably/browser/static/ably-webworker.min';
-// import * as Ably from 'ably';
 
-// Update the API key
+// TODO You should update the API key
 const ABLY_API_KEY = undefined;
 
 export default class Auth {
